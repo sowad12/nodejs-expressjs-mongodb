@@ -14,14 +14,14 @@ const routes=require('./routes/route')
 app.use(express.json()); // or use (bodyParser.json) first import bodyParser
 app.use(routes);
 
-app.get('/',(req,res)=>{
-    res.send('hello');
-});
+// app.get('/',(req,res)=>{
+//     res.send('hello');
+// });
 
 
-app.get('/p',(req,res)=>{
-  res.send('from middleware');  
-});
+// app.get('/p',(req,res)=>{
+//   res.send('from middleware');  
+// });
 
 app.get('/json',(req,res)=>{
     res.json({
